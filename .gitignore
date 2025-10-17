@@ -1,0 +1,61 @@
+# Dokumentacja formalna (prywatne dokumenty prawne)
+dokumentacja/formalna/
+!dokumentacja/formalna/README.md
+
+# Zasoby (szablony z danymi wrażliwymi)
+zasoby/
+!zasoby/README.md
+
+# Pliki tymczasowe i robocze
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# Dane finansowe i wrażliwe
+*finansowe*
+*dane-osobowe*
+*pesel*
+*nip*
+*regon*
+
+# Dokumenty w formatach binarnych (wersje robocze)
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+
+# Dane środowiskowe
+.env
+.env.local
+.env.production
+
+# Node.js (jeśli będziemy używać)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (jeśli będziemy używać)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDE i edytory
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old

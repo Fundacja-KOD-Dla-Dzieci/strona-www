@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundacja Kod dla Dzieci - Technologie wspierające dzieci z niepełnosprawnościami</title>
+    <meta name="description" content="Fundacja Kod dla Dzieci tworzy technologie wspomagające komunikację, rehabilitację i edukację dzieci z porażeniem mózgowym i innymi niepełnosprawnościami.">
+    <meta name="keywords" content="fundacja, dzieci, niepełnosprawność, technologia, komunikator, rehabilitacja, open source">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h1 class="nav__logo">Fundacja Kod dla Dzieci</h1>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#misja" class="nav__link">Misja</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projekty" class="nav__link">Projekty</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#zespol" class="nav__link">Zespół</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#wspieraj" class="nav__link">Wspieraj</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#kontakt" class="nav__link">Kontakt</a>
+                </li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Tworzymy technologie, które <span class="hero__highlight">zmieniają życie</span> dzieci z niepełnosprawnościami
+                </h1>
+                <p class="hero__description">
+                    Fundacja Kod dla Dzieci rozwija oprogramowanie open-source, urządzenia wspomagające i rozwiązania technologiczne, które umożliwiają dzieciom z porażeniem mózgowym lepszą komunikację, naukę i samodzielność.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#projekty" class="btn btn--primary">Zobacz projekty</a>
+                    <a href="#wspieraj" class="btn btn--secondary">Wesprzyj nas</a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <div class="hero__placeholder">
+                    <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" rx="20" fill="#E3F2FD"/>
+                        <circle cx="200" cy="150" r="80" fill="#2196F3" opacity="0.3"/>
+                        <path d="M160 150 L180 170 L240 110" stroke="#2196F3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <text x="200" y="220" text-anchor="middle" fill="#1976D2" font-family="Inter" font-size="16" font-weight="500">Technologie wspierające</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misja Section -->
+    <section id="misja" class="misja">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Nasza misja</h2>
+                <p class="section__subtitle">Wierzymy, że technologia może przybliżać dzieci do samodzielności i radości życia</p>
+            </div>
+            <div class="misja__grid">
+                <div class="misja__card">
+                    <div class="misja__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="misja__card-title">Open Source</h3>
+                    <p class="misja__card-description">Wszystkie nasze projekty są open-source i dostępne dla każdego. Tworzymy technologie, które mogą być rozwijane przez społeczność.</p>
+                </div>
+                <div class="misja__card">
+                    <div class="misja__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12L11 14L15 10" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#2196F3" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="misja__card-title">Dostępność</h3>
+                    <p class="misja__card-description">Projektujemy rozwiązania z myślą o dostępności. Każde nasze narzędzie jest testowane z użytkownikami końcowymi.</p>
+                </div>
+                <div class="misja__card">
+                    <div class="misja__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="9" cy="7" r="4" stroke="#2196F3" stroke-width="2"/>
+                            <path d="M23 21V19C23 18.1645 22.7155 17.3541 22.2094 16.7094C21.7033 16.0646 20.9991 15.6257 20.2 15.456" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45768C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="misja__card-title">Społeczność</h3>
+                    <p class="misja__card-description">Budujemy społeczność wolontariuszy, terapeutów, rodziców i programistów, którzy wspólnie tworzą lepsze rozwiązania.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projekty Section -->
+    <section id="projekty" class="projekty">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Nasze projekty</h2>
+                <p class="section__subtitle">Tworzymy technologie, które realnie zmieniają życie dzieci</p>
+            </div>
+            <div class="projekty__grid">
+                <div class="projekt__card">
+                    <div class="projekt__image">
+                        <div class="projekt__placeholder">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="40" fill="#E3F2FD"/>
+                                <circle cx="50" cy="50" r="25" fill="#2196F3" opacity="0.3"/>
+                                <circle cx="50" cy="50" r="10" fill="#2196F3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="projekt__content">
+                        <h3 class="projekt__title">EyeTalk</h3>
+                        <p class="projekt__description">Komunikator sterowany wzrokiem dla dzieci z porażeniem mózgowym. Umożliwia komunikację poprzez śledzenie ruchu gałek ocznych.</p>
+                        <div class="projekt__tags">
+                            <span class="projekt__tag">JavaScript</span>
+                            <span class="projekt__tag">WebRTC</span>
+                            <span class="projekt__tag">Accessibility</span>
+                        </div>
+                        <div class="projekt__links">
+                            <a href="#" class="projekt__link">GitHub</a>
+                            <a href="#" class="projekt__link">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projekt__card">
+                    <div class="projekt__image">
+                        <div class="projekt__placeholder">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100" height="100" rx="20" fill="#E8F5E8"/>
+                                <path d="M30 40 L50 60 L70 30" stroke="#4CAF50" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="projekt__content">
+                        <h3 class="projekt__title">OpenAAC</h3>
+                        <p class="projekt__description">Darmowy system komunikacji alternatywnej (AAC) z biblioteką symboli i funkcjami personalizacji dla różnych potrzeb użytkowników.</p>
+                        <div class="projekt__tags">
+                            <span class="projekt__tag">React</span>
+                            <span class="projekt__tag">PWA</span>
+                            <span class="projekt__tag">AAC</span>
+                        </div>
+                        <div class="projekt__links">
+                            <a href="#" class="projekt__link">GitHub</a>
+                            <a href="#" class="projekt__link">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projekt__card">
+                    <div class="projekt__image">
+                        <div class="projekt__placeholder">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100" height="100" rx="20" fill="#FFF3E0"/>
+                                <circle cx="50" cy="50" r="30" fill="#FF9800" opacity="0.3"/>
+                                <path d="M40 50 L50 40 L60 50 L50 60 Z" fill="#FF9800"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="projekt__content">
+                        <h3 class="projekt__title">MotionPlay</h3>
+                        <p class="projekt__description">Gry rehabilitacyjne oparte o czujniki ruchu. Wspierają rozwój motoryczny i koordynację u dzieci z niepełnosprawnościami.</p>
+                        <div class="projekt__tags">
+                            <span class="projekt__tag">Unity</span>
+                            <span class="projekt__tag">Arduino</span>
+                            <span class="projekt__tag">Rehabilitation</span>
+                        </div>
+                        <div class="projekt__links">
+                            <a href="#" class="projekt__link">GitHub</a>
+                            <a href="#" class="projekt__link">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zespół Section -->
+    <section id="zespol" class="zespol">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Nasz zespół</h2>
+                <p class="section__subtitle">Wolontariusze, którzy tworzą technologie zmieniające życie</p>
+            </div>
+            <div class="zespol__grid">
+                <div class="zespol__card">
+                    <div class="zespol__avatar">
+                        <div class="zespol__placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="40" fill="#E3F2FD"/>
+                                <circle cx="40" cy="30" r="12" fill="#2196F3"/>
+                                <path d="M20 70 C20 55, 30 45, 40 45 C50 45, 60 55, 60 70" fill="#2196F3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="zespol__name">Jan Kowalski</h3>
+                    <p class="zespol__role">Prezes Zarządu</p>
+                    <p class="zespol__description">Programista z 10-letnim doświadczeniem w technologiach dostępnych. Pasjonat tworzenia rozwiązań dla osób z niepełnosprawnościami.</p>
+                </div>
+                <div class="zespol__card">
+                    <div class="zespol__avatar">
+                        <div class="zespol__placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="40" fill="#E8F5E8"/>
+                                <circle cx="40" cy="30" r="12" fill="#4CAF50"/>
+                                <path d="M20 70 C20 55, 30 45, 40 45 C50 45, 60 55, 60 70" fill="#4CAF50"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="zespol__name">Anna Nowak</h3>
+                    <p class="zespol__role">Członek Zarządu</p>
+                    <p class="zespol__description">Terapeutka AAC z wieloletnim doświadczeniem. Specjalizuje się w komunikacji alternatywnej i wspomagającej.</p>
+                </div>
+                <div class="zespol__card">
+                    <div class="zespol__avatar">
+                        <div class="zespol__placeholder">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="40" fill="#FFF3E0"/>
+                                <circle cx="40" cy="30" r="12" fill="#FF9800"/>
+                                <path d="M20 70 C20 55, 30 45, 40 45 C50 45, 60 55, 60 70" fill="#FF9800"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="zespol__name">Piotr Wiśniewski</h3>
+                    <p class="zespol__role">Lead Developer</p>
+                    <p class="zespol__description">Frontend developer specjalizujący się w dostępnych interfejsach użytkownika. Tworzy rozwiązania zgodne ze standardami WCAG.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wspieraj Section -->
+    <section id="wspieraj" class="wspieraj">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Wesprzyj nas</h2>
+                <p class="section__subtitle">Razem możemy tworzyć technologie, które zmieniają życie</p>
+            </div>
+            <div class="wspieraj__grid">
+                <div class="wspieraj__card">
+                    <div class="wspieraj__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="wspieraj__title">Wolontariat techniczny</h3>
+                    <p class="wspieraj__description">Programowanie, design, testowanie - każda umiejętność jest cenna. Dołącz do naszego zespołu wolontariuszy.</p>
+                    <a href="#kontakt" class="wspieraj__link">Zostań wolontariuszem</a>
+                </div>
+                <div class="wspieraj__card">
+                    <div class="wspieraj__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 1V23" stroke="#2196F3" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6312 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6312 13.6815 18 14.5717 18 15.5C18 16.4283 17.6312 17.3185 16.9749 17.9749C16.3185 18.6312 15.4283 19 14.5 19H6" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="wspieraj__title">Wsparcie finansowe</h3>
+                    <p class="wspieraj__description">Darowizny finansowe pomagają nam rozwijać projekty, organizować warsztaty i wspierać wolontariuszy.</p>
+                    <a href="#kontakt" class="wspieraj__link">Wesprzyj finansowo</a>
+                </div>
+                <div class="wspieraj__card">
+                    <div class="wspieraj__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="#2196F3" stroke-width="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21" stroke="#2196F3" stroke-width="2"/>
+                            <line x1="12" y1="17" x2="12" y2="21" stroke="#2196F3" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="wspieraj__title">Sprzęt i licencje</h3>
+                    <p class="wspieraj__description">Przekaż nieużywany sprzęt komputerowy, licencje oprogramowania lub usługi hostingowe.</p>
+                    <a href="#kontakt" class="wspieraj__link">Przekaż sprzęt</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="kontakt">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Kontakt</h2>
+                <p class="section__subtitle">Skontaktuj się z nami i dołącz do naszej misji</p>
+            </div>
+            <div class="kontakt__content">
+                <div class="kontakt__info">
+                    <div class="kontakt__item">
+                        <div class="kontakt__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#2196F3" stroke-width="2"/>
+                                <polyline points="22,6 12,13 2,6" stroke="#2196F3" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="kontakt__details">
+                            <h3>Email</h3>
+                            <p>kontakt@fundacjakod.pl</p>
+                        </div>
+                    </div>
+                    <div class="kontakt__item">
+                        <div class="kontakt__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.3639 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#2196F3" stroke-width="2"/>
+                                <circle cx="12" cy="10" r="3" stroke="#2196F3" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="kontakt__details">
+                            <h3>Siedziba</h3>
+                            <p>Rybnik, Polska</p>
+                        </div>
+                    </div>
+                    <div class="kontakt__item">
+                        <div class="kontakt__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 19C-1 5 15 -3 22 5C22 5 22 5 22 5C22 5 22 5 22 5" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="kontakt__details">
+                            <h3>GitHub</h3>
+                            <p>github.com/fundacjakod</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kontakt__form">
+                    <form class="form">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Imię i nazwisko</label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="subject" class="form__label">Temat</label>
+                            <select id="subject" name="subject" class="form__select" required>
+                                <option value="">Wybierz temat</option>
+                                <option value="volunteer">Wolontariat</option>
+                                <option value="donation">Darowizna</option>
+                                <option value="partnership">Współpraca</option>
+                                <option value="other">Inne</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Wiadomość</label>
+                            <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Wyślij wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3 class="footer__logo">Fundacja Kod dla Dzieci</h3>
+                    <p class="footer__description">Tworzymy technologie, które pomagają dzieciom z niepełnosprawnościami</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Projekty</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">EyeTalk</a></li>
+                            <li><a href="#" class="footer__link">OpenAAC</a></li>
+                            <li><a href="#" class="footer__link">MotionPlay</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Wsparcie</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Wolontariat</a></li>
+                            <li><a href="#" class="footer__link">Darowizny</a></li>
+                            <li><a href="#" class="footer__link">Partnerstwo</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Dokumenty</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Sprawozdania</a></li>
+                            <li><a href="#" class="footer__link">Statut</a></li>
+                            <li><a href="#" class="footer__link">Transparentność</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 Fundacja Kod dla Dzieci. Wszystkie prawa zastrzeżone.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 19C-1 5 15 -3 22 5C22 5 22 5 22 5C22 5 22 5 22 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 8C18.2091 8 20 9.79086 20 12V21H16V12C16 11.4477 15.5523 11 15 11C14.4477 11 14 11.4477 14 12V21H10V8H14V9C14.5523 9 15 8.55228 15 8C15 7.44772 14.5523 7 14 7H10C8.89543 7 8 7.89543 8 9V21H4V8H8V9C8.55228 9 9 8.55228 9 8C9 7.44772 8.55228 7 8 7H4C2.89543 7 2 7.89543 2 9V21C2 22.1046 2.89543 23 4 23H20C21.1046 23 22 22.1046 22 21V12C22 9.79086 20.2091 8 18 8H16Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
