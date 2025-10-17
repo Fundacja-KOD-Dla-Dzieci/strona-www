@@ -1,0 +1,12 @@
+name = "fundacja-kod-dla-dzieci"
+compatibility_date = "2025-01-17"
+pages_build_output_dir = "strona-www"
+
+# Static site configuration
+[env.production]
+name = "fundacja-kod-dla-dzieci"
+compatibility_date = "2025-01-17"
+pages_build_output_dir = "strona-www"
+
+[env.production.vars]
+NEXT_PUBLIC_SITE_URL = "https://fundacja-kod-dla-dzieci.pages.dev"
