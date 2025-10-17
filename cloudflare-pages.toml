@@ -1,0 +1,81 @@
+# Cloudflare Pages Configuration
+
+## Build Settings
+
+- **Framework preset**: None (Static Site)
+- **Build command**: (empty)
+- **Build output directory**: `strona-www`
+- **Root directory**: `/` (or leave empty)
+
+## Environment Variables
+
+- `NODE_VERSION`: `18`
+- `NPM_VERSION`: `9`
+
+## Headers
+
+```yaml
+# _headers file for Cloudflare Pages
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/strona-www/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/strona-www/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+```
+
+## Redirects
+
+```yaml
+# _redirects file for Cloudflare Pages
+# Redirect root to website
+/ /strona-www/ 200
+
+# Redirect old paths
+/old-path /strona-www/new-path 301
+```
+
+## Functions (if needed)
+
+```javascript
+// functions/api/contact.js
+export async function onRequestPost(context) {
+  // Handle contact form submissions
+  const { request } = context;
+  const formData = await request.formData();
+  
+  // Process form data
+  // Send email notification
+  // Return response
+  
+  return new Response(JSON.stringify({ success: true }), {
+    headers: { 'Content-Type': 'application/json' }
+  });
+}
+```
+
+## Custom Domain
+
+1. Add custom domain in Cloudflare Pages dashboard
+2. Configure DNS records
+3. Enable SSL/TLS
+4. Set up redirects if needed
+
+## Performance
+
+- Enable Cloudflare CDN
+- Enable Brotli compression
+- Enable image optimization
+- Enable minification
+
+## Security
+
+- Enable DDoS protection
+- Configure WAF rules
+- Set security headers
+- Enable bot protection

@@ -1,0 +1,33 @@
+{
+  "name": "fundacja-kod-dla-dzieci",
+  "version": "1.0.0",
+  "description": "Fundacja Kod dla Dzieci - Strona internetowa",
+  "main": "strona-www/index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "wrangler pages deploy strona-www --project-name=fundacja-kod-dla-dzieci",
+    "dev": "cd strona-www && python3 -m http.server 8000",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "fundacja",
+    "dzieci",
+    "niepełnosprawność",
+    "technologia",
+    "accessibility",
+    "open-source"
+  ],
+  "author": "Fundacja Kod dla Dzieci",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fundacjakod/fundacja-kod-dla-dzieci.git"
+  },
+  "homepage": "https://fundacja-kod-dla-dzieci.pages.dev",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
