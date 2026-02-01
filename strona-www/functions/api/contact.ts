@@ -125,7 +125,13 @@ Możesz odpowiedzieć bezpośrednio na ten email.`,
     });
 
     if (!resendResponse.ok) {
-      const errorData = await resendResponse.json().catch(() => ({ message: await resendResponse.text() }));
+      let errorData;
+      try {
+        errorData = await resendResponse.json();
+      } catch {
+        const errorText = await resendResponse.text();
+        errorData = { message: errorText };
+      }
       console.error('Resend API error:', errorData);
       throw new Error(`Błąd wysyłki emaila: ${errorData.message || 'Unknown error'}`);
     }
