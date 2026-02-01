@@ -36,7 +36,9 @@ export async function onRequestPost(context: {
       );
     }
 
-    const contactEmail = env.CONTACT_EMAIL || 'kontakt@fundacjakod.pl';
+    // Dla testów Resend (bez zweryfikowanej domeny) można wysyłać tylko na zweryfikowany email
+    // Po weryfikacji domeny fundacjakod.pl w Resend, zmień na kontakt@fundacjakod.pl
+    const contactEmail = env.CONTACT_EMAIL || 'jarode2@gmail.com'; // Tymczasowo dla testów
     const subjectLabels: Record<string, string> = {
       'volunteer': 'Wolontariat',
       'donation': 'Darowizna',
