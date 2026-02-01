@@ -38,6 +38,12 @@ body {
     background-color: var(--color-white);
 }
 
+/* Font display optimization */
+@font-face {
+    font-family: 'Inter';
+    font-display: swap;
+}
+
 /* Container */
 .container {
     max-width: 1200px;

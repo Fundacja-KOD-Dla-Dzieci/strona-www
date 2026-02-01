@@ -35,7 +35,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
 </head>
 <body>
     <!-- Header -->
@@ -43,7 +44,7 @@
         <nav class="nav container">
             <div class="nav__brand">
                 <a href="/" class="nav__logo" aria-label="Fundacja Kod dla Dzieci - Strona główna">
-                    <img src="assets/images/logo-kod-dla-dzieci.png" alt="KOD dla dzieci - Logo fundacji">
+                    <img src="assets/images/logo-kod-dla-dzieci.png" alt="KOD dla dzieci - Logo fundacji" width="150" height="150" loading="eager">
                 </a>
             </div>
             <ul class="nav__menu" id="nav-menu">
@@ -87,7 +88,7 @@
                 </div>
             </div>
             <div class="hero__image">
-                <img src="assets/images/logo-kod-dla-dzieci.png" alt="KOD dla dzieci - Logo fundacji" class="hero__logo">
+                <img src="assets/images/logo-kod-dla-dzieci.png" alt="KOD dla dzieci - Logo fundacji" class="hero__logo" width="512" height="512" loading="eager">
             </div>
         </div>
     </section>
@@ -403,7 +404,7 @@
             <div class="footer__content">
                 <div class="footer__brand">
                     <a href="/" class="footer__logo" aria-label="Fundacja Kod dla Dzieci - Strona główna">
-                        <img src="assets/images/logo-kod-dla-dzieci.png" alt="KOD dla dzieci - Logo fundacji">
+                        <img src="assets/images/logo-kod-dla-dzieci.png" alt="KOD dla dzieci - Logo fundacji" width="120" height="120" loading="lazy">
                     </a>
                     <p class="footer__description">Tworzymy technologie, które pomagają dzieciom z niepełnosprawnościami</p>
                 </div>
@@ -452,6 +453,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>
