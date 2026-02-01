@@ -1,0 +1,16 @@
+# Cloudflare Pages - pliki do wykluczenia z deployu
+# Te pliki będą w repozytorium, ale NIE będą deployowane na Cloudflare Pages
+
+# Dokumentacja (nie powinna być publicznie dostępna)
+*.md
+!README.md
+
+# Pliki konfiguracyjne (nie powinny być publiczne)
+.env.example
+.gitignore
+.mailmap
+wrangler.toml
+
+# Package files (niepotrzebne na produkcji)
+package.json
+package-lock.json

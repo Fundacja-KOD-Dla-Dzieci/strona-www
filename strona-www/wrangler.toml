@@ -3,6 +3,7 @@
 
 name = "strona-www"
 compatibility_date = "2025-02-01"
+pages_build_output_dir = "."
 
 # Environment variables (ustaw w Cloudflare Dashboard → Pages → Settings → Environment Variables)
 # RESEND_API_KEY = "re_..." (rekomendowane - łatwiejsze)
