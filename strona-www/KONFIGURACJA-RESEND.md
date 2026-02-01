@@ -25,20 +25,16 @@
 #### Preview Environment (opcjonalnie, dla testów):
 - Te same zmienne jak wyżej
 
-### Krok 2: Weryfikacja domeny w Resend (opcjonalnie)
+### Krok 2: Weryfikacja domeny w Resend ✅
 
-**Dla produkcji (opcjonalne, ale zalecane):**
-1. Przejdź na https://resend.com
-2. Zaloguj się do konta
-3. Przejdź do **Domains**
-4. Dodaj domenę `fundacjakod.pl` (jeśli jeszcze nie dodana)
-5. Skonfiguruj DNS records zgodnie z instrukcjami Resend
-6. Po weryfikacji możesz zmienić `from` w `contact.ts` na `noreply@fundacjakod.pl`
+**Status: ZWERYFIKOWANE** ✅
 
-**Dla testów (działa od razu):**
-- Obecnie używa `onboarding@resend.dev` (domena testowa Resend)
-- Działa bez weryfikacji domeny
-- Możesz od razu testować!
+Domena `fundacjakod.pl` została zweryfikowana w Resend. Formularz używa:
+- **From**: `noreply@fundacjakod.pl`
+- **To**: `kontakt@fundacjakod.pl`
+
+**Instrukcja weryfikacji** (dla przyszłych zmian):
+Zobacz: `RESEND-DOMAIN-VERIFICATION.md`
 
 ### Krok 3: Deploy na Cloudflare Pages
 
@@ -65,8 +61,8 @@ npm run deploy
 ## 📧 Format emaila
 
 Email będzie zawierał:
-- **Od**: Fundacja Kod dla Dzieci <onboarding@resend.dev> (lub noreply@fundacjakod.pl po weryfikacji)
-- **Do**: kontakt@fundacjakod.pl
+- **Od**: Fundacja Kod dla Dzieci <noreply@fundacjakod.pl> ✅
+- **Do**: kontakt@fundacjakod.pl ✅
 - **Reply-To**: email osoby wypełniającej formularz (możesz odpowiedzieć bezpośrednio!)
 - **Temat**: [Formularz kontaktowy] [Temat] - [Imię i nazwisko]
 - **Treść**: HTML z formatowaniem (kolory brandowe) + tekstowa wersja
