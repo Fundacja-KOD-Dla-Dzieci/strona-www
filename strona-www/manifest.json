@@ -1,0 +1,42 @@
+{
+  "name": "Fundacja Kod dla Dzieci",
+  "short_name": "Fundacja KOD",
+  "description": "Strona internetowa Fundacji Kod dla Dzieci - technologie wspierające dzieci z niepełnosprawnościami",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00A7E1",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "pl",
+  "icons": [
+    {
+      "src": "/assets/images/logo-kod-dla-dzieci.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/logo-kod-dla-dzieci.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["nonprofit", "education", "accessibility"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Kontakt",
+      "short_name": "Kontakt",
+      "description": "Skontaktuj się z nami",
+      "url": "/#kontakt",
+      "icons": [
+        {
+          "src": "/assets/images/logo-kod-dla-dzieci.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
