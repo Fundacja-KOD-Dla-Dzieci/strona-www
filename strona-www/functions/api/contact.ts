@@ -36,9 +36,8 @@ export async function onRequestPost(context: {
       );
     }
 
-    // Dla testów Resend (bez zweryfikowanej domeny) można wysyłać tylko na zweryfikowany email
-    // Po weryfikacji domeny fundacjakod.pl w Resend, zmień na kontakt@fundacjakod.pl
-    const contactEmail = env.CONTACT_EMAIL || 'jarode2@gmail.com'; // Tymczasowo dla testów
+    // Email docelowy - używa environment variable lub domyślny kontakt@fundacjakod.pl
+    const contactEmail = env.CONTACT_EMAIL || 'kontakt@fundacjakod.pl';
     const subjectLabels: Record<string, string> = {
       'volunteer': 'Wolontariat',
       'donation': 'Darowizna',
@@ -67,7 +66,7 @@ export async function onRequestPost(context: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'Fundacja Kod dla Dzieci <onboarding@resend.dev>',
+        from: 'Fundacja Kod dla Dzieci <noreply@fundacjakod.pl>',
         to: [contactEmail],
         replyTo: email,
         subject: `[Formularz kontaktowy] ${subjectLabel} - ${name}`,
