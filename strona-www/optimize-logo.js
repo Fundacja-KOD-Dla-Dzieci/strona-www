@@ -1,7 +1,11 @@
 // Skrypt do optymalizacji logo używając sharp
-const sharp = require('sharp');
-const fs = require('fs');
-const path = require('path');
+import sharp from 'sharp';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const inputFile = 'assets/images/logo-kod-dla-dzieci.png';
 const outputDir = 'assets/images';
