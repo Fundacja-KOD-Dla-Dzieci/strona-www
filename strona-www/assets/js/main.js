@@ -1,5 +1,21 @@
 // Main JavaScript file for Fundacja Kod dla Dzieci website
 
+// Load CSS asynchronously (fallback for preload)
+(function() {
+    const cssPreload = document.querySelector('link[rel="preload"][as="style"]');
+    if (cssPreload) {
+        cssPreload.onload = function() {
+            this.rel = 'stylesheet';
+        };
+        // Fallback if onload doesn't fire
+        setTimeout(function() {
+            if (cssPreload.rel === 'preload') {
+                cssPreload.rel = 'stylesheet';
+            }
+        }, 100);
+    }
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile navigation toggle
     const navToggle = document.getElementById('nav-toggle');

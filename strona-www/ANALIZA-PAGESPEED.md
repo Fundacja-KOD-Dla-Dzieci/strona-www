@@ -10,8 +10,9 @@
 Aby zobaczyć pełne wyniki, otwórz link powyżej lub uruchom nową analizę na:
 https://pagespeed.web.dev/analysis?url=https://fundacjakod.pl
 
-## ✅ Optymalizacje wykonane (przed testem):
+## ✅ Optymalizacje wykonane:
 
+### Faza 1 (podstawowa):
 1. ✅ **Obrazki zoptymalizowane**
    - Logo: 216KB → różne rozmiary (~44KB łącznie)
    - Oszczędność: ~820KB (94.9% redukcja)
@@ -20,6 +21,22 @@ https://pagespeed.web.dev/analysis?url=https://fundacjakod.pl
 3. ✅ **Defer** dla skryptów JavaScript
 4. ✅ **Width/height** attributes dla obrazków (zapobiega CLS)
 5. ✅ **Font optimization** (async loading, font-display: swap)
+
+### Faza 2 (na podstawie PageSpeed Insights):
+6. ✅ **fetchpriority="high"** dla LCP elementu (logo w hero)
+   - Priorytetyzuje ładowanie najważniejszego obrazka
+   
+7. ✅ **Logo w dokładnym rozmiarze wyświetlanym**
+   - Utworzono logo-438x438.png (20.9KB) zamiast logo-512x512.png (26.1KB)
+   - Oszczędność: ~5.2KB dla LCP elementu
+   - Dodano srcset dla responsywności
+   
+8. ✅ **Asynchroniczne ładowanie CSS**
+   - Preload dla style.css z fallbackiem
+   - Redukuje render-blocking time
+   
+9. ✅ **Optymalizacja skryptów**
+   - Fallback dla asynchronicznego CSS w main.js
 
 ## 📈 Oczekiwane wyniki:
 
@@ -103,22 +120,42 @@ https://pagespeed.web.dev/analysis?url=https://fundacjakod.pl
 
 ## 📊 Porównanie przed/po:
 
-| Metryka | Przed | Po | Status |
-|---------|-------|-----|--------|
-| Logo transfer | 864KB | 44KB | ✅ 94.9% redukcja |
-| LCP | > 3s | < 2.5s | ✅ |
-| CLS | > 0.1 | < 0.1 | ✅ |
-| Performance Score | 60-70 | 85-95 | ✅ |
+| Metryka | Przed | Po (Faza 1) | Po (Faza 2) | Status |
+|---------|-------|------------|-------------|--------|
+| Logo transfer (łącznie) | 864KB | 44KB | 64.5KB | ✅ 92.5% redukcja |
+| LCP logo (hero) | 26.1KB | 26.1KB | 20.9KB | ✅ 20% redukcja |
+| Render-blocking CSS | Tak | Tak | Nie | ✅ Asynchroniczne |
+| fetchpriority | Brak | Brak | High | ✅ Priorytetyzacja |
+| LCP | > 3s | < 2.5s | < 2.0s | ✅ Oczekiwane |
+| CLS | > 0.1 | < 0.1 | < 0.1 | ✅ |
+| Performance Score | 60-70 | 85-95 | 90-100 | ✅ Oczekiwane |
 
 ## ✨ Podsumowanie:
 
-Strona została **znacznie zoptymalizowana**:
+Strona została **znacznie zoptymalizowana** w dwóch fazach:
+
+### Faza 1 (podstawowa):
 - ✅ Obrazki: 94.9% redukcja transferu
 - ✅ JavaScript: defer (nie blokuje renderowania)
 - ✅ CSS: font optimization
 - ✅ HTML: width/height, lazy loading
 
+### Faza 2 (na podstawie PageSpeed Insights):
+- ✅ LCP element: fetchpriority="high" + dokładny rozmiar (20.9KB zamiast 26.1KB)
+- ✅ CSS: asynchroniczne ładowanie (redukcja render-blocking)
+- ✅ Responsywne obrazy: srcset dla logo
+
+**Kluczowe poprawki:**
+1. **LCP request discovery** ✅ - fetchpriority="high" dodane
+2. **Improve image delivery** ✅ - logo-438x438.png (20.9KB) zamiast 512x512px
+3. **Render blocking requests** ✅ - CSS ładowany asynchronicznie
+
 **Strona powinna osiągnąć bardzo dobre wyniki w PageSpeed Insights!** 🎉
+
+### Oczekiwane wyniki po Faza 2:
+- **Performance Score**: 90-100 (mobile) / 95-100 (desktop)
+- **LCP**: < 2.0s (poprawa z ~2.5s)
+- **Render-blocking**: Eliminacja opóźnienia CSS
 
 ---
 

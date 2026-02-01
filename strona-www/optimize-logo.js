@@ -16,6 +16,7 @@ const sizes = [
   { name: 'logo-120x120.png', width: 120, height: 120 },
   { name: 'logo-150x150.png', width: 150, height: 150 },
   { name: 'logo-192x192.png', width: 192, height: 192 },
+  { name: 'logo-438x438.png', width: 438, height: 438 }, // Dokładny rozmiar wyświetlany w hero
   { name: 'logo-512x512.png', width: 512, height: 512 },
 ];
 
