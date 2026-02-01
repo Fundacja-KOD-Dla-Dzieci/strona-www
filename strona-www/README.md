@@ -2,6 +2,9 @@
 
 Responsywna strona internetowa fundacji zbudowana z myślą o dostępności i nowoczesnym designie.
 
+**🌐 Repozytorium**: https://github.com/Fundacja-KOD-Dla-Dzieci/strona-www  
+**🚀 Deploy**: https://strona-www.pages.dev (Cloudflare Pages)
+
 ## Struktura plików
 
 ```
