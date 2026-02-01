@@ -11,6 +11,11 @@ export async function onRequest(context: {
     return new Response('Not Found', { status: 404 });
   }
 
+  // Allow Service Worker and manifest files
+  if (pathname === '/sw.js' || pathname === '/manifest.json' || pathname.startsWith('/assets/')) {
+    return context.next();
+  }
+
   // Block access to config files
   const blockedPaths = [
     '.env.example',
