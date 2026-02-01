@@ -6,6 +6,24 @@
     <title>Fundacja Kod dla Dzieci - Technologie wspierające dzieci z niepełnosprawnościami</title>
     <meta name="description" content="Fundacja Kod dla Dzieci tworzy technologie wspomagające komunikację, rehabilitację i edukację dzieci z porażeniem mózgowym i innymi niepełnosprawnościami.">
     <meta name="keywords" content="fundacja, dzieci, niepełnosprawność, technologia, komunikator, rehabilitacja, open source">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fundacjakod.pl/">
+    <meta property="og:title" content="Fundacja Kod dla Dzieci - Technologie wspierające dzieci z niepełnosprawnościami">
+    <meta property="og:description" content="Fundacja Kod dla Dzieci tworzy technologie wspomagające komunikację, rehabilitację i edukację dzieci z porażeniem mózgowym i innymi niepełnosprawnościami.">
+    <meta property="og:image" content="https://fundacjakod.pl/assets/images/logo-kod-dla-dzieci.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fundacjakod.pl/">
+    <meta property="twitter:title" content="Fundacja Kod dla Dzieci - Technologie wspierające dzieci z niepełnosprawnościami">
+    <meta property="twitter:description" content="Fundacja Kod dla Dzieci tworzy technologie wspomagające komunikację, rehabilitację i edukację dzieci z porażeniem mózgowym i innymi niepełnosprawnościami.">
+    <meta property="twitter:image" content="https://fundacjakod.pl/assets/images/logo-kod-dla-dzieci.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo-kod-dla-dzieci.png">
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +34,9 @@
     <header class="header">
         <nav class="nav container">
             <div class="nav__brand">
-                <h1 class="nav__logo">Fundacja Kod dla Dzieci</h1>
+                <a href="/" class="nav__logo" aria-label="Fundacja Kod dla Dzieci - Strona główna">
+                    <img src="assets/images/logo-kod-dla-dzieci.png" alt="KOD dla dzieci - Logo fundacji">
+                </a>
             </div>
             <ul class="nav__menu" id="nav-menu">
                 <li class="nav__item">
@@ -48,10 +68,10 @@
         <div class="hero__container container">
             <div class="hero__content">
                 <h1 class="hero__title">
-                    Tworzymy technologie, które <span class="hero__highlight">zmieniają życie</span> dzieci z niepełnosprawnościami
+                    Tworzymy technologie, które <span class="hero__highlight">zmieniają życie</span>
                 </h1>
                 <p class="hero__description">
-                    Fundacja Kod dla Dzieci rozwija oprogramowanie open-source, urządzenia wspomagające i rozwiązania technologiczne, które umożliwiają dzieciom z porażeniem mózgowym lepszą komunikację, naukę i samodzielność.
+                    <strong>Fundacja Kod dla Dzieci</strong> rozwija otwarte rozwiązania technologiczne wspierające komunikację i rozwój dzieci z niepełnosprawnościami.
                 </p>
                 <div class="hero__buttons">
                     <a href="#projekty" class="btn btn--primary">Zobacz projekty</a>
@@ -59,14 +79,7 @@
                 </div>
             </div>
             <div class="hero__image">
-                <div class="hero__placeholder">
-                    <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="400" height="300" rx="20" fill="#E3F2FD"/>
-                        <circle cx="200" cy="150" r="80" fill="#2196F3" opacity="0.3"/>
-                        <path d="M160 150 L180 170 L240 110" stroke="#2196F3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <text x="200" y="220" text-anchor="middle" fill="#1976D2" font-family="Inter" font-size="16" font-weight="500">Technologie wspierające</text>
-                    </svg>
-                </div>
+                <img src="assets/images/logo-kod-dla-dzieci.png" alt="KOD dla dzieci - Logo fundacji" class="hero__logo">
             </div>
         </div>
     </section>
@@ -82,9 +95,9 @@
                 <div class="misja__card">
                     <div class="misja__icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M2 17L12 22L22 17" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M2 12L12 17L22 12" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#00A7E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="#00A7E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="#00A7E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="misja__card-title">Open Source</h3>
@@ -93,8 +106,8 @@
                 <div class="misja__card">
                     <div class="misja__icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 12L11 14L15 10" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#2196F3" stroke-width="2"/>
+                            <path d="M9 12L11 14L15 10" stroke="#00A7E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#00A7E1" stroke-width="2"/>
                         </svg>
                     </div>
                     <h3 class="misja__card-title">Dostępność</h3>
@@ -103,10 +116,10 @@
                 <div class="misja__card">
                     <div class="misja__icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="9" cy="7" r="4" stroke="#2196F3" stroke-width="2"/>
-                            <path d="M23 21V19C23 18.1645 22.7155 17.3541 22.2094 16.7094C21.7033 16.0646 20.9991 15.6257 20.2 15.456" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45768C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#00A7E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="9" cy="7" r="4" stroke="#00A7E1" stroke-width="2"/>
+                            <path d="M23 21V19C23 18.1645 22.7155 17.3541 22.2094 16.7094C21.7033 16.0646 20.9991 15.6257 20.2 15.456" stroke="#00A7E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45768C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#00A7E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="misja__card-title">Społeczność</h3>
@@ -129,8 +142,8 @@
                         <div class="projekt__placeholder">
                             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="50" cy="50" r="40" fill="#E3F2FD"/>
-                                <circle cx="50" cy="50" r="25" fill="#2196F3" opacity="0.3"/>
-                                <circle cx="50" cy="50" r="10" fill="#2196F3"/>
+                                <circle cx="50" cy="50" r="25" fill="#00A7E1" opacity="0.3"/>
+                                <circle cx="50" cy="50" r="10" fill="#00A7E1"/>
                             </svg>
                         </div>
                     </div>
@@ -212,8 +225,8 @@
                         <div class="zespol__placeholder">
                             <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="40" cy="40" r="40" fill="#E3F2FD"/>
-                                <circle cx="40" cy="30" r="12" fill="#2196F3"/>
-                                <path d="M20 70 C20 55, 30 45, 40 45 C50 45, 60 55, 60 70" fill="#2196F3"/>
+                                <circle cx="40" cy="30" r="12" fill="#00A7E1"/>
+                                <path d="M20 70 C20 55, 30 45, 40 45 C50 45, 60 55, 60 70" fill="#00A7E1"/>
                             </svg>
                         </div>
                     </div>
@@ -264,9 +277,9 @@
                 <div class="wspieraj__card">
                     <div class="wspieraj__icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M2 17L12 22L22 17" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M2 12L12 17L22 12" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#00A7E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="#00A7E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="#00A7E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="wspieraj__title">Wolontariat techniczny</h3>
@@ -276,8 +289,8 @@
                 <div class="wspieraj__card">
                     <div class="wspieraj__icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 1V23" stroke="#2196F3" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6312 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6312 13.6815 18 14.5717 18 15.5C18 16.4283 17.6312 17.3185 16.9749 17.9749C16.3185 18.6312 15.4283 19 14.5 19H6" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 1V23" stroke="#00A7E1" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6312 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6312 13.6815 18 14.5717 18 15.5C18 16.4283 17.6312 17.3185 16.9749 17.9749C16.3185 18.6312 15.4283 19 14.5 19H6" stroke="#00A7E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <h3 class="wspieraj__title">Wsparcie finansowe</h3>
@@ -287,9 +300,9 @@
                 <div class="wspieraj__card">
                     <div class="wspieraj__icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="#2196F3" stroke-width="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21" stroke="#2196F3" stroke-width="2"/>
-                            <line x1="12" y1="17" x2="12" y2="21" stroke="#2196F3" stroke-width="2"/>
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="#00A7E1" stroke-width="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21" stroke="#00A7E1" stroke-width="2"/>
+                            <line x1="12" y1="17" x2="12" y2="21" stroke="#00A7E1" stroke-width="2"/>
                         </svg>
                     </div>
                     <h3 class="wspieraj__title">Sprzęt i licencje</h3>
@@ -312,8 +325,8 @@
                     <div class="kontakt__item">
                         <div class="kontakt__icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#2196F3" stroke-width="2"/>
-                                <polyline points="22,6 12,13 2,6" stroke="#2196F3" stroke-width="2"/>
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#00A7E1" stroke-width="2"/>
+                                <polyline points="22,6 12,13 2,6" stroke="#00A7E1" stroke-width="2"/>
                             </svg>
                         </div>
                         <div class="kontakt__details">
@@ -324,8 +337,8 @@
                     <div class="kontakt__item">
                         <div class="kontakt__icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.3639 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#2196F3" stroke-width="2"/>
-                                <circle cx="12" cy="10" r="3" stroke="#2196F3" stroke-width="2"/>
+                                <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.3639 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#00A7E1" stroke-width="2"/>
+                                <circle cx="12" cy="10" r="3" stroke="#00A7E1" stroke-width="2"/>
                             </svg>
                         </div>
                         <div class="kontakt__details">
@@ -336,7 +349,7 @@
                     <div class="kontakt__item">
                         <div class="kontakt__icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 19C-1 5 15 -3 22 5C22 5 22 5 22 5C22 5 22 5 22 5" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 19C-1 5 15 -3 22 5C22 5 22 5 22 5C22 5 22 5 22 5" stroke="#00A7E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                         <div class="kontakt__details">
@@ -346,7 +359,7 @@
                     </div>
                 </div>
                 <div class="kontakt__form">
-                    <form class="form">
+                    <form class="form" id="contact-form" method="POST" action="/api/contact" data-static-form-name="contact">
                         <div class="form__group">
                             <label for="name" class="form__label">Imię i nazwisko</label>
                             <input type="text" id="name" name="name" class="form__input" required>
@@ -381,7 +394,9 @@
         <div class="container">
             <div class="footer__content">
                 <div class="footer__brand">
-                    <h3 class="footer__logo">Fundacja Kod dla Dzieci</h3>
+                    <a href="/" class="footer__logo" aria-label="Fundacja Kod dla Dzieci - Strona główna">
+                        <img src="assets/images/logo-kod-dla-dzieci.png" alt="KOD dla dzieci - Logo fundacji">
+                    </a>
                     <p class="footer__description">Tworzymy technologie, które pomagają dzieciom z niepełnosprawnościami</p>
                 </div>
                 <div class="footer__links">

@@ -1,0 +1,14 @@
+{
+  "name": "strona-www-fundacja-kod-dla-dzieci",
+  "version": "1.0.0",
+  "description": "Strona internetowa Fundacji Kod dla Dzieci",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "deploy": "wrangler pages deploy . --project-name=strona-www"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0",
+    "@cloudflare/workers-types": "^4.20250101.0"
+  }
+}

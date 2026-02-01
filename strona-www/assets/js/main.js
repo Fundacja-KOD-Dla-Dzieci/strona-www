@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form handling
     const contactForm = document.querySelector('.form');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             // Get form data
@@ -67,12 +67,54 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // Validate form
-            if (validateForm(formObject)) {
-                // Simulate form submission
-                showMessage('Dziękujemy za wiadomość! Odpowiemy w ciągu 24 godzin.', 'success');
-                this.reset();
-            } else {
+            if (!validateForm(formObject)) {
                 showMessage('Proszę wypełnić wszystkie wymagane pola.', 'error');
+                return;
+            }
+            
+            // Disable submit button
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Wysyłanie...';
+            
+            try {
+                // Try Cloudflare Pages Function first (if available)
+                const formAction = this.getAttribute('action');
+                const formMethod = this.getAttribute('method') || 'POST';
+                
+                let response;
+                if (formAction && formAction.includes('formspree.io')) {
+                    // Formspree submission
+                    response = await fetch(formAction, {
+                        method: formMethod,
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                } else {
+                    // Cloudflare Pages Function (fallback)
+                    response = await fetch('/api/contact', {
+                        method: 'POST',
+                        body: formData,
+                    });
+                }
+                
+                const result = await response.json();
+                
+                if (response.ok) {
+                    showMessage('Dziękujemy za wiadomość! Odpowiemy w ciągu 24 godzin.', 'success');
+                    this.reset();
+                } else {
+                    showMessage(result.error || 'Wystąpił błąd podczas wysyłania wiadomości.', 'error');
+                }
+            } catch (error) {
+                console.error('Form submission error:', error);
+                showMessage('Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie później.', 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
             }
         });
     }

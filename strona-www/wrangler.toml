@@ -1,0 +1,17 @@
+# Cloudflare Pages/Workers configuration
+# Używane do deploy i konfiguracji environment variables
+
+name = "strona-www"
+compatibility_date = "2025-02-01"
+
+# Environment variables (ustaw w Cloudflare Dashboard → Pages → Settings → Environment Variables)
+# RESEND_API_KEY = "re_..." (rekomendowane - łatwiejsze)
+# LUB
+# SENDGRID_API_KEY = "SG...."
+# CONTACT_EMAIL = "kontakt@fundacjakod.pl"
+
+[env.production]
+# Production environment variables
+
+[env.preview]
+# Preview environment variables
