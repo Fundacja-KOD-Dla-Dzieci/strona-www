@@ -17,7 +17,7 @@
 
 #### Production Environment:
 - **Variable name**: `RESEND_API_KEY`
-- **Value**: `re_NJQ8ayq7_GDKGvJpRfYSVx9xHSrniFf9S`
+- **Value**: `[Twój klucz API z Resend - uzyskaj z https://resend.com/api-keys]`
 
 - **Variable name**: `CONTACT_EMAIL`
 - **Value**: `kontakt@fundacjakod.pl`
@@ -102,7 +102,7 @@ Email będzie zawierał:
 
 ## ✅ Checklist przed deployem
 
-- [x] API key przygotowany: `re_NJQ8ayq7_GDKGvJpRfYSVx9xHSrniFf9S`
+- [ ] API key dodany do Cloudflare Environment Variables (NIE commituj klucza do repo!)
 - [ ] API key dodany do Cloudflare Environment Variables
 - [ ] CONTACT_EMAIL ustawiony na kontakt@fundacjakod.pl
 - [x] Funkcja `functions/api/contact.ts` jest w repozytorium
